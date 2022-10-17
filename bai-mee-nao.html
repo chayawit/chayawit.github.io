@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bai-mee-nao.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="js/bai-mee-nao.js" defer></script>
+  <title>Bai Mee Nao</title>
+</head>
+<body>
+<div id="container">
+  <form>
+  <div id="items">
+    <div class="item 0">
+      <input type="number" name="price" min="0" placeholder="Hao Chib">
+      <input type="number" name="quantity" min="0" placeholder="Hao Big">
+      <input type="button" onclick="newQuantity(this)" value="+" class="btn btn-primary">
+    </div>
+    <div class="item 1">
+      <input type="number" name="price" min="0" placeholder="Hao Chib">
+      <input type="number" name="quantity" min="0" placeholder="Hao Big">
+      <input type="button" onclick="newQuantity(this)" value="+" class="btn btn-primary">
+    </div>
+  </div>
+  <div id="bottom-row">
+    <input type="button" onclick="newRow()" value="New product row" class="btn btn-primary">
+    <input type="button" onclick="compare()" value="Start compare" class="btn btn-success">
+    <input type="reset" onclick="return confirm_reset();" class="btn btn-default">
+  </div>
+  </form>
+  <p id="result"></p>
+  <div id="detailedResults"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#container {
+  margin: 1em;
+}
+
+.item {
+  border-bottom: 1px solid gainsboro;
+  margin-top: 0.5em;
+}
+
+input[name="price"] {
+  background-color: darksalmon;
+}
+
+input[name="quantity"] {
+  background-color: darkseagreen;
+}
+
+input[value="+"] {
+  line-height: 0.5em;
+}
+
+#bottom-row {
+  padding: 1em 0;
+}
